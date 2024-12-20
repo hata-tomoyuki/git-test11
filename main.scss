@@ -1,0 +1,19 @@
+// main.scss
+@use 'colors' as c;
+
+body {
+    background-color: c.$primary;
+    color: #333;
+}
+
+.button-primary {
+    @include c.button-style(c.$primary);
+}
+
+.button-secondary {
+    @include c.button-style(c.$secondary);
+}
+
+.button-error {
+    @include c.button-style(c.$error);
+}

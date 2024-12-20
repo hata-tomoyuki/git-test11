@@ -1,0 +1,13 @@
+// colors.scss
+$primary: #3498db;
+$secondary: #2ecc71;
+$error: #e74c3c;
+
+@mixin button-style($color) {
+    background-color: $color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

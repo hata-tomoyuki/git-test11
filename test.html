@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 500vh;
+      }
+      .scroll-navigation {
+        text-align: center;
+        padding-top: 80px;
+        font-weight: bold;
+      }
+
+      .arrow-down {
+        margin: 20px auto;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid blue;
+      }
+
+      .contents {
+        width: 100%;
+        max-width: 500px;
+        margin: 550px auto 100px;
+      }
+
+      .content {
+        width: 100%;
+        height: 100px;
+        margin-top: 50px;
+        background-color: green;
+        color: #fff;
+        text-align: center;
+        line-height: 100px;
+        opacity: 0;
+        transition: opacity 1s, transform 1s;
+      }
+
+      .is-scrollIn {
+        opacity: 1;
+        transform: translate(0, -50px);
+      }
+
+    </style>
+  </head>
+  <p class="scroll-navigation">下にスクロールしてください</p>
+  <div class="arrow-down"></div>
+  <div class="contents">
+    <div class="content">
+      <p>フェードするよ</p>
+    </div>
+    <!-- <div class="content">
+      <p>フェードするよ</p>
+    </div> -->
+  </div>
+
+  <script>
+    document.addEventListener('scroll', function () {
+      const contents = document.querySelectorAll('.content')
+      contents.forEach((el) => {
+        const windowHeight = window.innerHeight
+
+        const elementTop = el.getBoundingClientRect().top
+        const elementBottom = el.getBoundingClientRect().bottom
+
+        // 問題1. content要素の表示と非表示を切り替えるJavaScriptを書いてください
+        // この下に解答してください
+        if (elementTop < windowHeight) {
+          el.classList.add('is-scrollIn')
+          console.log(elementBottom)
+        } else {
+          el.classList.remove('is-scrollIn')
+        }
+      })
+    })
+
+  </script>
+  </body>
+</html>

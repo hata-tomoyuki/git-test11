@@ -1,0 +1,313 @@
+/* .woocommerce-page  */
+.woocommerce-page .reason img,
+.woocommerce-page .merit img {
+  box-shadow: 6px 6px 0px #00873e5a;
+  border: 1px solid #c1c1c1;
+}
+
+.woocommerce-page .reason .wp-block-image img:not([style*="object-fit"]) {
+  height: 220px !important;
+  width: 420px;
+}
+
+.woocommerce-page .reason-block h3 {
+  position: relative;
+  padding-left: 18px;
+}
+
+.woocommerce-page .reason-block h3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #02873e;
+  width: 6px;
+  height: 80%;
+  display: block;
+}
+
+.woocommerce-page .reason-block .wp-block-column p {
+  padding-left: 12px;
+}
+
+.woocommerce-page .recommend .wp-block-columns {
+  justify-content: center;
+  gap: 60px;
+}
+
+.woocommerce-page
+  .recommend
+  .wp-block-columns:not(.is-not-stacked-on-mobile)
+  > .wp-block-column {
+  width: fit-content;
+  flex-grow: 0;
+  flex-basis: auto;
+}
+
+.woocommerce-page .recommend .wp-block-group {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 3px solid #ac00d5;
+}
+
+.woocommerce-page .merit .wp-block-image img:not([style*="object-fit"]) {
+  height: 210px !important;
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.woocommerce-page .guarantee .wp-block-columns {
+  border: 1px solid #000;
+  background-color: #f5f5f5;
+}
+
+.woocommerce-page .guarantee .wp-block-cover__inner-container {
+  width: 900px;
+  flex-shrink: 0;
+}
+
+.woocommerce-page .benefit {
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+.woocommerce-page .benefit h2 {
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
+    "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-size: 32px !important;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.woocommerce-page .benefit h2 strong {
+  background: linear-gradient(156deg, #fe7c3e 0%, #ef4406 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 64px;
+  margin: 0 8px;
+}
+
+.woocommerce-page .benefit-num {
+  position: relative;
+}
+
+.woocommerce-page .benefit-num:before {
+  content: url("/wp-content/uploads/2024/11/sun-icon.png");
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.woocommerce-page .benefit-num p {
+  position: relative;
+}
+
+.woocommerce-page .benefit-text {
+  font-weight: bold;
+}
+
+.woocommerce-page .benefit-text strong {
+  color: #ff1f1f;
+}
+
+.woocommerce-page .available_items .wp-block-media-text,
+.woocommerce-page .unavailable_items .wp-block-media-text {
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #fff;
+  height: 150px;
+}
+
+.woocommerce-page .available_items .wp-block-media-text,
+.woocommerce-page .unavailable_items.other .wp-block-media-text {
+  border: 3px solid #02873e;
+}
+
+.woocommerce-page .unavailable_items .wp-block-media-text {
+  border: 3px solid #070707;
+}
+
+.woocommerce-page .available_items .wp-block-media-text figure,
+.woocommerce-page .unavailable_items .wp-block-media-text figure {
+  text-align: center;
+}
+
+.available_items .wp-block-media-text figure img,
+.woocommerce-page .unavailable_items .wp-block-media-text figure img {
+  width: 100px;
+}
+
+.woocommerce-page
+  .available_items
+  .wp-block-media-text
+  .wp-block-media-text__content,
+.woocommerce-page
+  .unavailable_items
+  .wp-block-media-text
+  .wp-block-media-text__content {
+  padding: 0;
+}
+
+.woocommerce-page .available_items .wp-block-media-text p,
+.woocommerce-page .unavailable_items .wp-block-media-text p {
+  font-size: 14px;
+}
+
+.woocommerce-page .clothes_count img {
+  height: 150px;
+  object-fit: contain;
+}
+
+.woocommerce-page .clothes_count .wp-block-media-text__content {
+  padding-left: 0;
+}
+
+.woocommerce-page .benefit .wp-block-columns {
+  height: 180px;
+}
+
+.woocommerce-page
+  .available_items
+  .wp-block-media-text
+  > .wp-block-media-text__media {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .woocommerce-page p {
+    font-size: 12px;
+  }
+  .woocommerce-page .reason-block h3 {
+    font-size: 16px !important;
+  }
+
+  .woocommerce-page .wp-block-group__inner-container {
+    width: 100%;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .woocommerce-page .reason .wp-block-image img:not([style*="object-fit"]) {
+    height: 180px !important;
+  }
+
+  .woocommerce-page h2 {
+    font-size: 24px !important;
+    line-height: 1.5;
+  }
+
+  .woocommerce-page .reason .point h3 {
+    font-size: 16px !important;
+  }
+
+  .woocommerce-page .reason .point h4 {
+    font-size: 14px !important;
+  }
+
+  .woocommerce-page .benefit .wp-block-cover {
+    padding: 0;
+  }
+
+  .woocommerce-page .benefit .wp-block-cover__inner-container {
+    margin: 0;
+    width: 100%;
+    max-width: none !important;
+  }
+
+  .woocommerce-page .benefit h2 {
+    font-size: 18px !important;
+  }
+
+  .woocommerce-page .benefit h2 strong {
+    font-size: 36px;
+  }
+
+  .woocommerce-page .benefit .wp-block-columns {
+    position: relative;
+  }
+
+  .woocommerce-page .benefit-num {
+    position: absolute;
+    top: -18px;
+    left: 21px;
+    width: fit-content !important;
+  }
+
+  .woocommerce-page .benefit-num p {
+    font-size: 24px !important;
+  }
+
+  .woocommerce-page .benefit .benefit-text p {
+    font-size: 16px !important;
+  }
+  .woocommerce-page .benefit .wp-block-columns {
+    height: 120px;
+    padding: 16px;
+  }
+
+  .woocommerce-page .benefit-num:before {
+    transform: translate(-50%, -50%) scale(0.55);
+  }
+
+  .woocommerce-page .benefit .wp-block-columns .wp-block-column:nth-of-type(2) {
+    flex-basis: 90% !important;
+  }
+
+  .woocommerce-page .benefit figure {
+    width: 50px;
+  }
+
+  .woocommerce-page .guarantee .wp-block-cover__inner-container {
+    width: 90%;
+  }
+
+  .woocommerce-page .guarantee .wp-block-columns {
+    gap: 12px;
+    padding: 12px;
+  }
+  .woocommerce-page .guarantee .wp-block-columns h3 {
+    font-size: 16px !important;
+  }
+
+  .woocommerce-page .wp-block-image img {
+    width: 100%;
+  }
+
+  .woocommerce-page .available_items .wp-block-media-text,
+  .woocommerce-page .unavailable_items .wp-block-media-text {
+    height: 115px;
+  }
+
+  .woocommerce-page .available_items .wp-block-media-text figure img,
+  .woocommerce-page .unavailable_items .wp-block-media-text figure img {
+    width: 75px;
+  }
+  .woocommerce-page
+    .available_items
+    .wp-block-media-text
+    > .wp-block-media-text__media {
+    text-align: left;
+  }
+
+  .woocommerce-page .unavailable_items.other .wp-block-media-text p {
+    font-size: 14px !important;
+  }
+
+  .woocommerce-page .count .wp-block-media-text {
+    display: block;
+  }
+
+  .woocommerce-page .count .wp-block-columns {
+    gap: 0;
+  }
+
+  .woocommerce-page .count h4 {
+    font-size: 16px !important;
+  }
+
+  .woocommerce-page .clothes_count img {
+    height: 100px;
+  }
+}
